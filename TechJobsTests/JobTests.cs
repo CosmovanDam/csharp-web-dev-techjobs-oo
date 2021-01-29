@@ -3,11 +3,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace TechJobsTests
 {
     [TestClass]
-    public class UnitTest1
+    public class JobTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestSettingJobId()
         {
+           // TODO: Create two Job objects
+           
         }
     }
 }
