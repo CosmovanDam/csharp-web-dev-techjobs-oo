@@ -47,7 +47,5 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
-        .
-
     }
 }
