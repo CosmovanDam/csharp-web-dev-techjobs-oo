@@ -3,9 +3,19 @@ namespace TechJobsOO
 {
     public class CoreCompetency
     {
-        private int id { get; set; } // Turned into an auto-implemented property using { get; set; }
+        private int id;
+        public int Id // Turned into an auto-implemented property using { get; set; }
+        {
+            get { return id; }
+            internal set { id = Id; }
+        }
         private static int nextId = 1;
-        private string value { get; set; } // Turned into an auto-implemented property using { get; set; }
+        private string value;
+        public string Value // Turned into an auto-implemented property using { get; set; }
+        {
+            get { return value; }
+            internal set { value = Value; }
+        }
 
         // TODO: Change the fields to auto-implemented properties.
 
