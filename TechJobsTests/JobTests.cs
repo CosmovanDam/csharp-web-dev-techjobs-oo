@@ -55,7 +55,6 @@ namespace TechJobsTests
         // .ToString() test
 
         // TODO: Do part 1 of TDD for ToString
-        // https://education.launchcode.org/csharp-web-development/assignments/tech-jobs-oo.html#create-first-test-for-tostring
 
         [TestMethod]
         public void FirstToStringTest()
