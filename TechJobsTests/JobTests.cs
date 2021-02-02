@@ -84,7 +84,7 @@ namespace TechJobsTests
                 $"Position type: {field_setter.JobType.Value} \n" +
                 $"Core competency: {field_setter.JobCoreCompetency.Value} \n";
 
-            // System.Console.WriteLine(testJob);
+            System.Console.WriteLine(testJob);
 
             Assert.AreEqual(jobToString, testJob);
         }
@@ -92,7 +92,7 @@ namespace TechJobsTests
         [TestMethod]
         public void ThirdToStringTest()
         {
-            Job field_setter = new Job("Product tester", new Employer(), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            Job field_setter = new Job("Product tester", new Employer(""), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
             string jobToString = field_setter.ToString();
 

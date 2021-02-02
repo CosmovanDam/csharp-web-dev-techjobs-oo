@@ -1,8 +1,16 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
+
+        public Employer(string value) : base(value)
+        {
+            Value = value;
+        }
+
+        // Old unrefactored code
+        /*
         public int Id { get; }
         // Declares nextId as a static field that is not stored within any Employer object
         private static int nextId = 1;
@@ -39,5 +47,6 @@ namespace TechJobsOO
         {
             return Value;
         }
+        */
     }
 }

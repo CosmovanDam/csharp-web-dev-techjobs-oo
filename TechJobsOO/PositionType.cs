@@ -1,8 +1,16 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class PositionType
+    public class PositionType : JobField
     {
+
+        public PositionType(string value) : base(value)
+        {
+            Value = value;
+        }
+
+        // Unrefactored code
+        /*
         public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
@@ -36,5 +44,6 @@ namespace TechJobsOO
         {
             return Value;
         }
+        */
     }
 }

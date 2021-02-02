@@ -1,8 +1,16 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
+
+        public CoreCompetency(string value) : base(value)
+        {
+            Value = value;
+        }
+
+        // Unrefactored code
+        /*
         private int id;
         public int Id // Turned into an auto-implemented property using { get; set; }
         {
@@ -10,11 +18,11 @@ namespace TechJobsOO
             internal set { id = Id; }
         }
         private static int nextId = 1;
-        private string value;
+        private readonly string value;
         public string Value // Turned into an auto-implemented property using { get; set; }
         {
             get { return value; }
-            internal set { value = Value; }
+            internal set { Value = value; }
         }
 
         // TODO: Change the fields to auto-implemented properties.
@@ -45,5 +53,6 @@ namespace TechJobsOO
         {
             return value;
         }
+        */
     }
 }
