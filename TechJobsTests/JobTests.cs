@@ -21,5 +21,35 @@ namespace TechJobsTests
             // test
             
         }
+
+        [TestMethod]
+        public void TestJobConstructorSetsAllFields()
+        {
+            Job field_setter = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            
+            Assert.AreEqual(field_setter.Id, 1);
+            Assert.AreEqual(field_setter.Name, "Product tester");
+            Assert.AreEqual(field_setter.EmployerName.Value, "ACME");
+            Assert.AreEqual(field_setter.EmployerLocation.Value, "Desert");
+            Assert.AreEqual(field_setter.JobType.Value, "Quality control");
+            Assert.AreEqual(field_setter.JobCoreCompetency.Value, "Persistence");
+        }
+
+        [TestMethod]
+        public void TestJobsForEquality()
+        {
+            Job idOne = new Job();
+            Job idTwo = new Job();
+
+            // For sanity purposes
+            /*
+            System.Console.WriteLine(idOne.Id);
+            System.Console.WriteLine(idTwo.Id);
+            */
+
+            // Assert statement
+            Assert.IsFalse(Equals(idOne.Id, idTwo.Id));
+        }
     }
 }
+
